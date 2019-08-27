@@ -40,14 +40,10 @@ git commit -m "first commit"
 git push origin master
  ```
 
-![tubiao](https://www.avatrade.ca/wp-content/themes/ava_trade/assets/images/inner-pages/mt5/apple.png)
-子组件向父组件传值
---------------
-[/index.html](/Vue实例生命周期函数.html)  
+[父子组件传值](/Vue组件之间传值.html)  
 
-![tubiao](https://www.avatrade.ca/wp-content/themes/ava_trade/assets/images/inner-pages/mt5/apple.png)
-3.3模板语法
-------------
-[例子](/3—3模板语法.html)
+[VUE实例生命周期](/Vue实例生命周期函数.html)
 
+[3.3模板语法](/3—3模板语法.html)
 
+[Vue实例](/Vue实例.html)
