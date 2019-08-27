@@ -10,37 +10,37 @@
 <script>
     // 生命周期函数就是在Vue实例在某一个时间点会自动执行的函数
     var vm = new Vue({
-        el:'#app',
-        template:"<div>{{test}}</div>",
+        el: '#app',
+        template:"<div>{{message}}</div>",
         data:{
-            test:"hello world"
+            message:'hello world'
         },
         beforeCreate:function () {
-            console.log("beforeCreate");
-        },
+            console.log("beforeCreate")
+        }, //页面打开即执行
         created:function () {
-           console.log("created");
-        },
+            console.log("created")
+        }, //页面打开即执行
         beforeMount:function () {
             console.log(this.$el);
-            console.log("beforeMount");
-        },
+            console.log("beforeMount")
+        }, //页面未被渲染
         mounted:function () {
             console.log(this.$el);
-            console.log("mounted");
-        },
-        beforeDsestroy:function () {
-            console.log("beforeDsestroy");
-        },
+            console.log("mounted")
+        },  //页面已经渲染
+        beforeDestroy:function () {
+            console.log("beforeDestroy")
+        },  //销毁前执行
         destroyed:function () {
-            console.log("destroyed");
-        },
+            console.log("destroyed")
+        }, //销毁后执行
         beforeUpdate:function () {
-            console.log("beforeUpdate");
-        },
+            console.log("beforeUpdate")
+        },  //页面数据改变前执行
         updated:function () {
-            console.log("updated");
-        }
+            console.log("updated")
+        } //页面数据改变时执行
     })
 </script>
 </body>
