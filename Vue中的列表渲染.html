@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的列表渲染</title>
+    <script src="./vue.js"></script>
+</head>
+<body>
+    <!--数组的循环-->
+     <!--<div id="app">-->
+         <!--<div v-for="(item, index) of list"-->
+                   <!--:key="item.id">-->
+             <!--<div>-->
+                 <!--{{item.text}} &#45;&#45;&#45;&#45;&#45;&#45;{{index}}-->
+             <!--</div>-->
+             <!--<span>{{item.text}}</span>-->
+         <!--</div>-->
+     <!--</div>-->
+
+
+    <!--对象的循环-->
+    <div id="app">
+           <div v-for="(item, key, index) of userInfo">
+               {{item}} -- {{key}}  -- {{index}}
+           </div>
+    </div>
+     <script>
+         // 数组的变异方法
+         // push(往数组里添加数据)
+         // pop ：删除数组最后一项
+         // shift :删除数组第一项
+         // unshift ：往第一项添加内容
+         // splice :数组截取
+         // sort :数组截取
+         // reverse :数组取反
+         // 改变页面数据方法1  vm.list.splice(1,1,{id:'3333',text:'dsafdf'})   参数表示（从第二项数据开始处理，删除1条，增加1条）
+         // 改变页面数据方法2 直接修改引用如下：
+         // vm.list = [
+         // {
+         //     id: '212313',
+         //         text: 'hello'
+         // },
+         // {
+         //     id: '212312',
+         //         text: 'ab'
+         // },
+         // {
+         //     id: '2123134',
+         //         text: 'to'
+         // },
+         // {
+         //     id: '212315',
+         //         text: 'meet'
+         // },
+         // ]
+         // 数组的循环
+         // var vm =new Vue({
+         //     el: '#app',
+         //     data: {
+         //        list:[
+         //            {
+         //                id: '212313',
+         //                text: 'hello'
+         //            },
+         //            {
+         //                id: '212312',
+         //                text: 'nice'
+         //            },
+         //            {
+         //                id: '2123134',
+         //                text: 'to'
+         //            },
+         //            {
+         //                id: '212315',
+         //                text: 'meet'
+         //            },
+         //        ]
+         //     }
+         // })
+
+         // 对象的循环
+         // 修改对象内容的方法 修改指向 vm.userInfo = {
+         // name: 'dell',
+         //     age: 28,
+         //     gender: 'male',
+         //     salary :'secret',
+         //     address:'beijing'  //此项为新加项
+         // }
+         var vm = new Vue ({
+             el: '#app',
+             data: {
+                 userInfo: {
+                     name: 'dell',
+                     age: 28,
+                     gender: 'male',
+                     salary :'secret'
+                 }
+             }
+         })
+     </script>
+</body>
+
+</html>
