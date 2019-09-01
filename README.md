@@ -39,6 +39,7 @@ git add 文件
 git commit -m "first commit"
 git push origin master
  ```
+### 基础部分
 
 [父子组件传值](/Vue基础精讲/Vue组件之间传值.html)  
 
@@ -58,8 +59,12 @@ git push origin master
 
 [Vue组件中is的用法](/深入理解Vue组件/Vue组件is的使用.html)
 
+### 深入理解Vue组件
+
 [子组件data的定义](/深入理解Vue组件/子组件data的定义.html)
 
 [ref获取dom节点](/深入理解Vue组件/ref获取dom节点.html)
 
 [ref引用做计数器,子组件向父组件传值](/深入理解Vue组件/ref引用做计数器.html)
+
+[父子组件的数据传递](/深入理解Vue组件/父子组件的数据传递.html)

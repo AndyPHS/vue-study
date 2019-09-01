@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父子组件的数据传递</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+ <div id="app">
+     <counter :count="1" @inc="handleIncrease"></counter>
+     <counter :count="2" @inc="handleIncrease"></counter>
+     <div>{{total}}</div>
+ </div>
+ <script>
+    var counter = {
+        props:['count'],
+        data: function(){   // 知识点：子组件的data 必须是一个函数
+            return{
+                number:this.count
+            }
+        },
+        template: "<div @click='handleClick'>{{number}}</div>",
+        methods: {
+            handleClick:function () {
+                this.number = this.number+2;
+                this.$emit('inc',2) ;
+            }
+
+        }
+    };
+     var vm = new Vue({
+         el: '#app',
+         data:{
+               total: 5
+         },
+         components: {
+             counter:counter
+         },
+         methods: {
+             handleIncrease: function (step) {
+                 this.total += step;
+             }
+         }
+     })
+ </script>
+</body>
+</html>
