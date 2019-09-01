@@ -55,3 +55,5 @@ git push origin master
 [Vue中的列表渲染](/Vue中的列表渲染.html)
 
 [Vue中set方法](/Vue中set方法.html)
+
+[Vue组件中is的用法](/Vue组件is的使用.html)
