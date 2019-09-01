@@ -40,20 +40,26 @@ git commit -m "first commit"
 git push origin master
  ```
 
-[父子组件传值](/Vue组件之间传值.html)  
+[父子组件传值](/Vue基础精讲/Vue组件之间传值.html)  
 
-[VUE实例生命周期](/Vue实例生命周期函数.html)
+[VUE实例生命周期](/Vue基础精讲/Vue实例生命周期函数.html)
 
-[3.3模板语法](/3—3模板语法.html)
+[3.3模板语法](/Vue基础精讲/3—3模板语法.html)
 
-[Vue实例](/Vue实例.html)
+[Vue实例](/Vue基础精讲/Vue实例.html)
 
-[Vue样式的绑定](/vue样式的绑定.html)
+[Vue样式的绑定](/Vue基础精讲/vue样式的绑定.html)
 
-[Vue条件渲染](/Vue中条件的渲染.html)
+[Vue条件渲染](/Vue基础精讲/Vue中条件的渲染.html)
 
-[Vue中的列表渲染](/Vue中的列表渲染.html)
+[Vue中的列表渲染](/Vue基础精讲/Vue中的列表渲染.html)
 
-[Vue中set方法](/Vue中set方法.html)
+[Vue中set方法](/Vue基础精讲/Vue中set方法.html)
 
-[Vue组件中is的用法](/Vue组件is的使用.html)
+[Vue组件中is的用法](/深入理解Vue组件/Vue组件is的使用.html)
+
+[子组件data的定义](/深入理解Vue组件/子组件data的定义.html)
+
+[ref获取dom节点](/深入理解Vue组件/ref获取dom节点.html)
+
+[ref引用做计数器,子组件向父组件传值](/深入理解Vue组件/ref引用做计数器.html)

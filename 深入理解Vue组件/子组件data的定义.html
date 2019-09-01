@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vue组件中is的用法</title>
-    <script src="./vue.js"></script>
+    <title>子组件data的定义</title>
+    <script src="../vue.js"></script>
 </head>
 <body>
   <div id="app">
@@ -17,11 +17,16 @@
   </div>
   <script>
       Vue.component('row',{
-          template: "<tr><td>this is a row</td></tr>"
-      })
+          data: function(){
+               return {
+                   content:"this is a content"
+               }
+          },
+          template: "<tr><td>{{content}}</td></tr>"
+      });
       var  vm = new Vue({
           el : '#app'
-      })
+      }) ;
   </script>
 </body>
 </html>
