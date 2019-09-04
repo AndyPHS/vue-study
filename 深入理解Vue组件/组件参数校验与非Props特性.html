@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue.js"></script>
+</head>
+<body>
+    <div id="app">
+       <child content="hell"></child>
+    </div>
+</body>
+<script>
+    //props属性是父组件向子组件传递一个属性如content，子组件定义此属性，DOM标签中不会显示此属性
+    //props属性是父组件向子组件传递一个属性如content，子组件未定义此属性（未接收）则会报错 ，DOM标签中会显示此属性
+    Vue.component('child',{
+        // props:{
+        //     content:{
+        //         type: String,  //参数的类型
+                // required:false,   //是否必填
+                // default:"default value"   //如果未填写的值
+                // validator:function (value) {
+                //    return(value.length>5)
+                // }
+            // }
+
+        // },
+         template: '<div>{{ content }}</div>'
+    });
+    var vm = new Vue({
+        el: '#app'
+    })
+</script>
+</html>

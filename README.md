@@ -68,3 +68,5 @@ git push origin master
 [ref引用做计数器,子组件向父组件传值](/深入理解Vue组件/ref引用做计数器.html)
 
 [父子组件的数据传递](/深入理解Vue组件/父子组件的数据传递.html)
+
+[组件参数校验与非Props特性](/深入理解Vue组件/组件参数校验与非Props特性.html)
