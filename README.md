@@ -72,3 +72,5 @@ git push origin master
 [组件参数校验与非Props特性](/深入理解Vue组件/组件参数校验与非Props特性.html)
 
 [给组件绑定原生事件](/深入理解Vue组件/给组件绑定原生事件.html)
+
+[非父子组件之间的传值](/深入理解Vue组件/非父子组件之间的传值.html)
